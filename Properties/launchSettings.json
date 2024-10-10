@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Advanced_Software_Engineering_les03": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7024",
+      "launchBrowser": false
+    }
+  }
+}

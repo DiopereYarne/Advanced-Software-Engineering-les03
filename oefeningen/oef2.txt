@@ -1,0 +1,19 @@
+using oef2.Models;
+
+Book book1 = new Book("Harry Potter", "123", "2001", "J.K. Rowling");
+magazine magazine1 = new magazine("National Geographic", "456", "2020", "12");
+DVD dvd1 = new DVD("Inception", "789", "2010", 120);
+
+
+ List<LibraryItem> libraryItems = new List<LibraryItem>
+            {
+                book1,
+                magazine1,
+                dvd1
+            };
+
+            foreach (LibraryItem item in libraryItems)
+            {
+                item.PrintDetails();
+            }
+

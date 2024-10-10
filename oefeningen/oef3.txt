@@ -1,0 +1,22 @@
+using oef3.Models;
+
+
+        // Create a list of Vehicle objects
+        List<Vehicle> vehicles = new List<Vehicle>();
+
+        // Add a Car and a Boat to the list
+        vehicles.Add(new Car("Red", 120, 4));
+        vehicles.Add(new Boat("Blue", 50, "Saltwater"));
+
+        // Loop through the list and call DescribeVehicle on each object
+        foreach (Vehicle vehicle in vehicles)
+        {
+            Console.WriteLine(vehicle.DescribeVehicle());
+
+            // If the vehicle is refuelable, call the Refuel method
+            if (vehicle is IRefuelable refuelable)
+            {
+                refuelable.Refuel();
+            }
+        }
+    

@@ -1,0 +1,11 @@
+using oef1.Models;
+
+// Animal a = new Animal("Dier", 5);
+// a.makeSound(); // unkown sound
+
+Dog d = new Dog("Hond", 3, "Golden Retriever");  
+d.makeSound(); // Woof
+
+Console.WriteLine(d.Name); // Hond
+Console.WriteLine(d.Age); // 3
+Console.WriteLine(d.Breed); // Golden Retriever
